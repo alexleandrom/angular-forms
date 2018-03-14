@@ -1,11 +1,10 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
-
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
-import {ReactiveFormsModule} from './reactive-forms/reactive-forms.module';
 import {TemplateDrivenFormsModule} from './template-driven-forms/template-driven-forms.module';
+import {DataDrivenFormsModule} from './data-driven-forms/data-driven-forms.module';
 
 
 @NgModule({
@@ -15,9 +14,8 @@ import {TemplateDrivenFormsModule} from './template-driven-forms/template-driven
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule,
-    TemplateDrivenFormsModule
-
+    TemplateDrivenFormsModule,
+    DataDrivenFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

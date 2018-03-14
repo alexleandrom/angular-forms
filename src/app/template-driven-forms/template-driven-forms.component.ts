@@ -6,13 +6,19 @@ import {Component, OnInit} from '@angular/core';
 })
 export class TemplateDrivenFormsComponent implements OnInit {
 
+  // Two-way Data binding
+  usuario : any = {
+    nome : 'Teste 123',
+    email: 'alesk@salk.com'
+  };
   constructor() {
   }
 
   ngOnInit() {
   }
 
-  onSubmit (form) {
-    console.log(form);
-  }
+    onSubmit (form) {
+      console.log(this.usuario);
+      console.log(form);
+    }
 }
